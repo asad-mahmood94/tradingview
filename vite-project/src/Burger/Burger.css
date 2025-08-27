@@ -1,0 +1,108 @@
+.nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: #faa508;
+    color: white;
+}
+.burger-page {
+  display: flex;
+  flex-direction: column;
+  height: 90vh; /* Full page height */
+  width: 100vw;
+}
+
+/* Scrollable Burger Section */
+.burger-container {
+  flex: 1; /* Takes available space */
+  overflow-y: auto; /* Makes burger scrollable */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 100%;
+
+}
+
+.burger-builder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bun-image-top {
+    height: 100px;
+  width: 300px;
+  margin: 10px 0;
+}
+.bun-image-bottom {
+    height: 90px;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.burger-space {
+  min-height: 50px;
+  width: 200px;
+  background-color: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredients-text {
+  color: black;
+}
+
+.meat-piece {
+  width: 200px;
+  height: 15px;
+  background-color: brown;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Fixed Controls Section */
+.controls-container {
+    height: 30%;
+    width: 100%;
+  background-color: #faa508;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ingredient-label {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.control-button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.less-button {
+  background-color: red;
+}
+
+.more-button {
+  background-color: green;
+}

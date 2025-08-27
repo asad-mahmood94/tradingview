@@ -1,0 +1,261 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  /* Visible background color */
+  /* padding: 0 20px; */
+  color: white;
+  /* z-index: 1000; */
+}
+
+.navbar-logo {
+  height: 55px;
+  width: 50px;
+}
+
+.navbar-logo img {
+  height: 55px;
+  width: 50px;
+}
+
+.both-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 20px;
+  height: 35px;
+  position: relative;
+  /* Important for dropdown positioning */
+  cursor: pointer;
+}
+
+.navbar-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 8px;
+  cursor: default;
+}
+
+.search-icon {
+  color: #aaa;
+  cursor: pointer;
+  /* Pointer cursor for icon */
+  font-size: 18px;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 45px;
+  /* Appears just below the search bar */
+  left: 0;
+  background-color: white;
+  color: black;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1500;
+  padding: 10px 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-dropdown li {
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.search-dropdown li:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  height: 999px;
+  width: 200px;
+}
+
+/* Menu Items */
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+
+.menu-item button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  padding: 0 10px;
+}
+
+.menu-item button:hover {
+  background-color: gray;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  z-index: 999;
+  width: 230px;
+  height: 300px;
+}
+.option-note {
+  color: #525151;
+  font-size: 13px;
+}
+.option-name {
+  color: black;
+  font-size: 18px;
+  font-weight: 499;
+}
+/* Make heading look like a plain label */
+.dropdown-heading {
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  cursor: default;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+/* Prevent hover effect on heading */
+.dropdown-heading:hover {
+  background-color: transparent !important;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+.dropdown-heading li:hover {
+  background-color: transparent;
+}
+
+/* Right Side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* border: 2px solid red; */
+  /* overflow: hidden; */
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.get-started {
+  background: linear-gradient(to right, #4a90e2, #a34ff0);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-right: 40px;
+  border: 2px solid green;
+}
+
+.get-started:hover {
+  opacity: 0.9;
+}
+
+.outer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2); /* light, transparent white */
+  backdrop-filter: blur(0.1px);
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  overflow: hidden;
+}
+
+.outerBox {
+  width: 70%;
+  height: 80%;
+  border: 2px solid white;
+  background-color: white;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.outerNavbar {
+  display: flex;
+  width: 100%;
+  height: 86px;
+  background-color: white;
+}
+.outer-search {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
+  /* width: 60%; */
+  height: 50%;
+}
+.outer-icon {
+  width: 40px;
+  height: 25px;
+}
+.outer-input {
+  width: 500px;
+  height: 90%;
+  outline: none;
+}
+
+.link {
+  color: white;
+}
